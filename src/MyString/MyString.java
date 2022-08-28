@@ -61,6 +61,15 @@ public class MyString {
 
         this.setStr(String.valueOf(newStr));
     }
+    public void prepend(String tempStr) {
+        char[] string = tempStr.toCharArray();
+        char[] newStr = new char[this.length + string.length];
+
+        System.arraycopy(string, 0, newStr, 0, string.length);
+        System.arraycopy(this.str, 0, newStr, string.length, this.length);
+
+        this.setStr(String.valueOf(newStr));
+    }
     public char charAt(int index) {
         return this.str[index];
     }

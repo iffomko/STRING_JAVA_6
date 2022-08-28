@@ -9,5 +9,7 @@ public class Main {
         MyString substr = str.substr(7, 12);
         substr.println();
         System.out.println(substr.length());
+        str.prepend("Test string: ");
+        str.println();
     }
 }
