@@ -1,7 +1,5 @@
 package MyString;
 
-import java.util.Arrays;
-
 public class MyString {
     private char[] str;
     private int length;
@@ -54,7 +52,6 @@ public class MyString {
 
         return sub;
     }
-
     public void append(String tempStr) {
         char[] string = tempStr.toCharArray();
         char[] newStr = new char[this.length + string.length];
@@ -63,5 +60,8 @@ public class MyString {
         System.arraycopy(string, 0, newStr, this.length, string.length);
 
         this.setStr(String.valueOf(newStr));
+    }
+    public char charAt(int index) {
+        return this.str[index];
     }
 }
