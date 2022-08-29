@@ -2,6 +2,7 @@
  I practiced implementing strings, which uses in versions before java 7. This method of implementing strings is the most time-efficient, but takes up more memory. More time-efficient achieved by immutable classes (design-pattern).
 
 
+Methods in this class:
 - constructor MyString gets in arguments "strings" or variable with type of string and initialize values of object
 - method .setStr() gets in argiments "strings" or variable with type of strings and initialize values of object
 - method .println() print string on screen with a transfer to another line
